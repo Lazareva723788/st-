@@ -1,0 +1,16 @@
+start
+log string TIME
+new r number
+set r 86400000
+new d number
+set d 360
+new i number
+set i 1
+  loop o (360>i)
+    set r r+r
+    set i i+1
+  end o
+  loop a (TIME > r)
+     set TIME TIME-r
+  end a
+finish
